@@ -38,6 +38,18 @@ Welcome to this practical and compact guide about ROS 2. Click on the sections b
 
 - [Open Robotics: Topics](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
 
+[MATLAB Help-Center: ROS 2](https://de.mathworks.com/help/ros/ug/get-started-with-ros-2.html)
+
+- [Get Started with ROS 2 in Simulink](https://de.mathworks.com/help/ros/ug/get-started-with-ros-2-in-simulink.html)
+
+- [Generate a Standalone ROS Node from Simulink](https://de.mathworks.com/help/ros/ug/generate-a-standalone-ros-node-from-simulink.html)
+
+- [Generate Code to Manually Deploy a ROS 2 Node from Simulink](https://de.mathworks.com/help/ros/ug/generate-code-to-manually-deploy-ros-2-node.html)
+
+[Slamtec RPLIDAR A2](https://www.slamtec.com/en/Support#rplidar-a-series)
+
+- [Slamtec RPLIDAR A2 ROS 2 Package](https://github.com/Slamtec/rplidar_ros/tree/ros2)
+
 [NVIDIA Jetson Nano](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
 
 - [Q-engineering Installing Ubuntu on Jetson Nano](https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html) 

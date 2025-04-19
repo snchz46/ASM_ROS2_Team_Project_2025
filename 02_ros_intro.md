@@ -1,4 +1,12 @@
-# ROS 2: Nodes and Topics
+# ROS 2 Introduction
+
+ROS 2 (Robot Operating System 2) is a flexible and modular open-source framework for developing robotic applications. It provides the tools, libraries, and conventions needed to build distributed systems where multiple components—called nodes—can communicate over well-defined interfaces.
+
+Built to address the limitations of the original ROS, ROS 2 offers real-time capabilities, enhanced security, improved middleware abstraction, and native support for multi-platform systems (Linux, Windows, macOS). It is widely used in research, industrial automation, and autonomous systems.
+
+This guide aims to introduce ROS 2 concepts and provide practical steps for installation, configuration, and development with real examples using sensors like LiDAR and integrations with MATLAB.
+
+## ROS 2: Nodes and Topics
 In ROS 2, a node is a basic building block responsible for a specific, modular function within a robotic system. For example, one node might control wheel motors, while another might publish sensor data from a LiDAR. A complete robotic system is typically made up of many nodes working together, each performing a distinct role.
 Nodes communicate with each other through several mechanisms: topics, services, actions, and parameters. Among these, topics are the most common and flexible method for data exchange.
 A full robotic system is comprised of many nodes working together.
@@ -12,8 +20,8 @@ Topics are an essential part of the ROS 2 graph, enabling modular, distributed s
 ![Topic-MultiplePublisherandMultipleSubscriber](https://github.com/user-attachments/assets/3f7fdfc6-7162-45cc-96ff-816891511dc4)
 >[Source: Understanding ROS Topics](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
 >
-## Example of Nodes and Topics
-### Communication Between Two Devices on a Wired Local Network
+### Example of Nodes and Topics
+#### Communication Between Two Devices on a Wired Local Network
 This example demonstrates the communication between two devices connected through a wired local network using ROS 2. Each device runs different nodes and topics to test interoperability across the network.
 On the Windows device on MATLAB, a node named NodePublisher_MATLAB is launched. It publishes messages to the topic /Hello_MATLAB, sending the string 'This is a MATLAB pub'. This setup verifies that nodes and topics created in MATLAB on Windows can be correctly published and recognized in the ROS 2 environment, both in a Windows terminal and Linux
 

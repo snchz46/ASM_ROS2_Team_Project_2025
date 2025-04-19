@@ -50,5 +50,5 @@ The call mentioned above must be run every time a new console is opened, it is r
 
 ---
 
-⬅️ [LiDAR Integration](03_lidar.md) | 🔝 [Index](README.md)
+⬅️ [Stereo Camera Integration](04_stereo_cam.md) | 🔝 [Index](README.md)
 

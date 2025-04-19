@@ -7,4 +7,4 @@ Built to address the limitations of the original ROS, ROS 2 offers real-time cap
 This guide aims to introduce ROS 2 concepts and provide practical steps for installation, configuration, and development with real examples using sensors like LiDAR and integrations with MATLAB.
 
 
-🔝 [Index](README.md) | ➡️ [LiDAR Integration](02_nodes_topics.md)
+🔝 [Index](README.md) | ➡️ [Nodes and topics](02_nodes_topics.md)

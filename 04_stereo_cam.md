@@ -1,4 +1,4 @@
-# Implementing Stereo Camera ROS 2 
+# Implementing Stereo Camera ROS2
 
 ---
 

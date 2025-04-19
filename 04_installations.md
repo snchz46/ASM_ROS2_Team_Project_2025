@@ -47,3 +47,8 @@ with your own path to the setup.bat file. After that, if everything worked well,
 ros2
 ````
 The call mentioned above must be run every time a new console is opened, it is recommended to create a launch file where this command Is already run, so every time the launch file is opened there is no need to call the setup file
+
+---
+
+⬅️ [LiDAR Integration](03_lidar.md) | 🔝 [Index](README.md)
+

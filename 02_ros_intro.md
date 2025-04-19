@@ -31,6 +31,23 @@ On the Linux device, several ROS 2 demos and applications are executed, includin
 
 ![image](https://github.com/user-attachments/assets/ab71bd6d-27cf-4351-b3fa-53f973846e86)
 
+# Further Reading
+
+[ROS 2 Org.](https://docs.ros.org/en)
+
+- [Open Robotics: Nodes](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
+
+- [Open Robotics: Topics](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
+
+[MATLAB Help-Center: ROS 2](https://de.mathworks.com/help/ros/ug/get-started-with-ros-2.html)
+
+- [Get Started with ROS 2 in Simulink](https://de.mathworks.com/help/ros/ug/get-started-with-ros-2-in-simulink.html)
+
+- [Generate a Standalone ROS Node from Simulink](https://de.mathworks.com/help/ros/ug/generate-a-standalone-ros-node-from-simulink.html)
+
+- [Generate Code to Manually Deploy a ROS 2 Node from Simulink](https://de.mathworks.com/help/ros/ug/generate-code-to-manually-deploy-ros-2-node.html)
+
+
 ---
 
 ⬅️ [Introduction](01_intro.md) | 🔝 [Index](README.md) | ➡️ [LiDAR Integration](03_lidar.md)

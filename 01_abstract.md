@@ -1,10 +1,10 @@
-# 1️⃣ ROS 2 Introduction
+# Scope and Goals
 
-ROS 2 (Robot Operating System 2) is a flexible and modular open-source framework for developing robotic applications. It provides the tools, libraries, and conventions needed to build distributed systems where multiple components—called nodes—can communicate over well-defined interfaces.
+In order to develop and test automated driving systems a traffic environment in the scale 1:14 is going to be established
 
-Built to address the limitations of the original ROS, ROS 2 offers real-time capabilities, enhanced security, improved middleware abstraction, and native support for multi-platform systems (Linux, Windows, macOS). It is widely used in research, industrial automation, and autonomous systems.
+For this purpose a ROS2 environment shall be installed on a Nvidia Jetson Orin Controller. ROS2 nodes have to implemented to read sensor signals (camera, Lidar), exchange information via a CAN-Bus with other controllers and process some data. Whenever possible Simulink and code generations shall be used for the implementation of the ROS nodes.
 
-This guide aims to introduce ROS 2 concepts and provide practical steps for installation, configuration, and development with real examples using sensors like LiDAR and integrations with MATLAB.
-
+Conditions:
+This project is offered to ASM students at Esslingen University. The work continues predecessor projects and has interfaces to other project teams.
 
 🔝 [Index](README.md) | ➡️ [ROS 2 Introduction](02_ros_intro.md)

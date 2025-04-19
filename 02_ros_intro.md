@@ -33,6 +33,8 @@ On the Linux device, several ROS 2 demos and applications are executed, includin
 
 # Further Reading
 
+[![ROS 2 Overview | MATLAB and Simulink Tutorial](https://img.youtube.com/vi/9EB0f3lVY-0/0.jpg)](https://www.youtube.com/watch?v=9EB0f3lVY-0&list=PLw9UeyR2OgE0tOF7uac1OEFiNwY7-9j5y)
+
 [ROS 2 Org.](https://docs.ros.org/en)
 
 - [Open Robotics: Nodes](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)

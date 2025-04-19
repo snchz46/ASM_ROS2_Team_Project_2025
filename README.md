@@ -29,3 +29,17 @@ Welcome to this practical and compact guide about ROS 2. Click on the sections b
 | Ardent Apalone         | Ubuntu 16.04 (Xenial)              | No                    | 2018           | Not supported      | No             |
 
 ---
+
+## References used on this guide
+
+[ROS 2 Org.](https://docs.ros.org/en)
+
+- [Open Robotics: Nodes](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics.html)
+
+- [Open Robotics: Topics](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html)
+
+[NVIDIA Jetson Nano](https://developer.nvidia.com/embedded/learn/get-started-jetson-nano-devkit)
+
+- [Q-engineering Installing Ubuntu on Jetson Nano](https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.html) 
+
+- [Q-engineering Further info about Jetson Nano](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#installation)

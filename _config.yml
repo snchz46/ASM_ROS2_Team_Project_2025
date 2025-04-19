@@ -1,0 +1,4 @@
+title: ROS2 Guide
+description: A practical guide for using ROS 2 with LiDAR and obstacle avoidance in Python.
+baseurl: "" # required for GitHub Pages
+theme: minima

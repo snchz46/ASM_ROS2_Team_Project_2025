@@ -1,16 +1,19 @@
+
 # ASM ROS2 TEAM PROJECT 2025
-## A guide on how to setup
+## 🤖 ROS 2 Guide
 
-## Table of Contents
+Welcome to this practical and compact guide about ROS 2. Click on the sections below to navigate through each topic.
 
-- [ROS2 Introduction](#ros2-introduction)
-- [ROS 2: Nodes and Topics](#ros-2-nodes-and-topics)
-- [Example of Nodes and Topics](#example-of-nodes-and-topics)
-- [Implementing LiDAR (ubuntu)](#implementing-lidar-ubuntu)
-- [Appendix A: Tables](#appendix-a-tables)
-- [Appendix B: Installations](#appendix-b-installations)
-- [Appendix C: Data Sheets](#appendix-c-data-sheets)
-- [References](#references)
+## 📚 Table of Contents
+
+- [1️⃣ Introduction](01_intro.md)
+- [2️⃣ Nodes and Topics](02_nodes_topics.md)
+- [3️⃣ LiDAR Integration (Ubuntu)](03_lidar.md)
+- [4️⃣ Compatibility Table](04_compatibility.md)
+- [5️⃣ Installation Guides](05_install.md)
+- [6️⃣ Data Sheets](06_datasheet.md)
+- [7️⃣ References](07_references.md)
+
 
 
 # ROS2 Introduction

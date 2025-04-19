@@ -49,6 +49,9 @@ The following Python script demonstrates a minimal ROS 2 node that subscribes to
 
 [minimal_publisher.py](Scripts/LiDAR/minimal_publisher.py)
 
+![Screenshot from 2025-04-13 12-33-38](https://github.com/user-attachments/assets/07ff02bc-0f49-4b06-a879-d4ff9a1f7cb6)
+
+
 ## LiDAR-Based Obstacle Avoidance Node
 
 This Python script implements a simple obstacle avoidance node for a robot using LiDAR data in ROS 2.  
@@ -57,6 +60,8 @@ The node subscribes to the `/scan` topic to receive `LaserScan` messages from th
 It analyzes the frontal range of the LiDAR readings, detects obstacles within a specified threshold distance (30 cm), and reacts by either stopping and turning or moving forward if the path is clear.
 
 [obj_detect_lidar.py](Scripts/LiDAR/obj_detect_lidar.py)
+
+![Screenshot from 2025-04-13 12-34-12](https://github.com/user-attachments/assets/057add27-a50d-40a3-aca2-d6dbdd1155c0)
 
 ---
 

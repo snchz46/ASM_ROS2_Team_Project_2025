@@ -9,7 +9,7 @@ Welcome to this practical and compact guide about ROS 2. Click on the sections b
 
 - [1️⃣ Abstract](01_abstract.md)
 - [2️⃣ ROS 2 Introduction](02_ros_intro.md)
-- [3️⃣ LiDAR Integration (Ubuntu)](03_lidar.md)
+- [3️⃣ LiDAR Integration](03_lidar.md)
 - [4️⃣ Stereo Camera Integration](04_stereo_cam.md)
 - [5️⃣ Installation Guides](05_installations.md)
 

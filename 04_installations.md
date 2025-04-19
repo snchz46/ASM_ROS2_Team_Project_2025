@@ -18,6 +18,7 @@ More details on: https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.htm
 ## ROS2 Foxy Installation
 After the successful installation of Ubuntu, open a terminal and time the following commands:
 
+````bash
 sudo apt update && sudo apt install curl gnupg lsb-release
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add –
 sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
@@ -28,16 +29,21 @@ source ~/.bashrc
 sudo apt install python3-colcon-common-extensions python3-rosdep
 sudo rosdep init
 rosdep update
+````
 
 # Installing ROS2 on Windows and macOS
 
-Follow this tutorial, only for W10+ devices:
-https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html
-For macOS refer to this other tutorial:
-https://docs.ros.org/en/humble/Installation/Alternatives/macOS-Development-Setup.html
+Follow this [tutorial](https://docs.ros.org/en/humble/Installation/Windows-Install-Binary.html), only for W10+ devices
+
+For macOS refer to this other [tutorial](https://docs.ros.org/en/humble/Installation/Alternatives/macOS-Development-Setup.html).
 
 After successfully followed all the steps on the guides, open x64 Native Tools Command Prompt for VS 2022 command line console and type:
-call "C:\dev\ros2_humble\setup.bat" 
+````bash
+call "C:\dev\ros2_humble\setup.bat"
+````
+
 with your own path to the setup.bat file. After that, if everything worked well, running any ros2 command will work, the environment will be set up, for example:
+````bash
 ros2
+````
 The call mentioned above must be run every time a new console is opened, it is recommended to create a launch file where this command Is already run, so every time the launch file is opened there is no need to call the setup file

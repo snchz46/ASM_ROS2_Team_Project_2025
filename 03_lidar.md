@@ -45,56 +45,18 @@ After these steps a RViz2 window will appear. Make sure that the topic is set to
 
 ## Script code to read data from the LiDAR
 
-<details><summary>📜 Python Script </summary>
-  
-````python
-import rclpy
-from rclpy.node import Node
-from sensor_msgs.msg import LaserScan
+The following Python script demonstrates a minimal ROS 2 node that subscribes to LiDAR data published on the `/scan` topic. It listens for `LaserScan` messages and logs the distance value at angle 0 (the first index of the scan data) as a simple example.
 
-class SensorListener(Node):
-    """
-    This node subscribes to the '/scan' topic, which publishes LaserScan data
-    from a LiDAR sensor. Each time a new scan is available, it logs the distance
-    at the 0th index, just as a simple example.
-    """
+[minimal_publisher.py](Scripts/LiDAR/minimal_publisher.py)
 
-    def __init__(self):
-        super().__init__('RPLIDAR_listener')
-        # Create a subscription to the '/scan' topic, expecting LaserScan messages.
-        self.subscription = self.create_subscription(
-            LaserScan,
-            '/scan',
-            self.scan_callback,
-            10  # QoS (quality of service) history depth.
-        )
-        # Prevent unused variable warning (good practice in Python).
-        self.subscription  
+## LiDAR-Based Obstacle Avoidance Node
 
-    def scan_callback(self, msg):
-        """
-        Callback function that gets called whenever a new LaserScan message
-        arrives. We log the reading at the 0th index as an example.
-        """
-        if msg.ranges:
-            self.get_logger().info(f"Distance at angle 0: {msg.ranges[0]}")
+This Python script implements a simple obstacle avoidance node for a robot using LiDAR data in ROS 2.  
+The node subscribes to the `/scan` topic to receive `LaserScan` messages from the LiDAR sensor and publishes velocity commands to the `/cmd_vel` topic to control the robot's movement.
 
-def main(args=None):
-    # Initialize rclpy for Python.
-    rclpy.init(args=args)
-    node = SensorListener()
+It analyzes the frontal range of the LiDAR readings, detects obstacles within a specified threshold distance (30 cm), and reacts by either stopping and turning or moving forward if the path is clear.
 
-    # Spin the node so callbacks are processed.
-    rclpy.spin(node)
-
-    # Clean up and shutdown.
-    node.destroy_node()
-    rclpy.shutdown()
-
-if __name__ == '__main__':
-    main()
-````
-</details>
+[obj_detect_lidar.py](Scripts/LiDAR/obj_detect_lidar.py)
 
 ---
 

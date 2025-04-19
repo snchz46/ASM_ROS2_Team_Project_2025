@@ -65,4 +65,4 @@ It analyzes the frontal range of the LiDAR readings, detects obstacles within a 
 
 ---
 
-⬅️ [Nodes and topics](02_nodes_topics.md) | 🔝 [Index](README.md) | ➡️ [Installation guides](04_installations.md)
+⬅️ [Nodes and topics](02_nodes_topics.md) | 🔝 [Index](README.md) | ➡️ [Stereo Camera Integration](04_stereo_cam.md)

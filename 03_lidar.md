@@ -47,7 +47,7 @@ After these steps a RViz2 window will appear. Make sure that the topic is set to
 
 The following Python script demonstrates a minimal ROS 2 node that subscribes to LiDAR data published on the `/scan` topic. It listens for `LaserScan` messages and logs the distance value at angle 0 (the first index of the scan data) as a simple example.
 
-[minimal_publisher.py](Scripts/LiDAR/minimal_publisher.py)
+[minimal_publisher.py](Scripts/LiDAR/test_lidar_V2.py)
 
 ![Screenshot from 2025-04-13 12-33-38](https://github.com/user-attachments/assets/07ff02bc-0f49-4b06-a879-d4ff9a1f7cb6)
 

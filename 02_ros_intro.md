@@ -29,7 +29,8 @@ On the Windows device on MATLAB, a node named NodePublisher_MATLAB is launched. 
 
 On the Linux device, several ROS 2 demos and applications are executed, including the Talker demo, the Turtlesim3 demo, and an RPLIDAR application. Each of these creates its own set of nodes and topics as part of their default operation, contributing to the network-wide ROS 2 graph.
 
-![image](https://github.com/user-attachments/assets/ab71bd6d-27cf-4351-b3fa-53f973846e86)
+![test](https://github.com/user-attachments/assets/da3d569a-8bac-47a9-9a8a-0589a1b8859d)
+
 
 # Further Reading
 

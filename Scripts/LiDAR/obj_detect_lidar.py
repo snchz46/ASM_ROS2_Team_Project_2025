@@ -1,28 +1,15 @@
-
-# Initial setup:
-# 1. Make sure you the RPLIDAR A2 is running and the nodes and topics are created.
-# 2. Run this script with the command:
-#   python ~path/obj_detect_lidar.py
-
-# This script is a simple obstacle avoidance node for a robot using LiDAR data.
+#!/usr/bin/env python3
 
 import rclpy
-# The rclpy library is the ROS 2 Python client library.
-# It provides the necessary tools to create and manage ROS 2 nodes.
 from rclpy.node import Node
-# The Node class is the base class for creating a ROS 2 node.
 from sensor_msgs.msg import LaserScan
-# The LaserScan message contains the distance measurements from the LiDAR sensor.
-# The ranges are the distances to obstacles at various angles.
-# It provides methods for subscribing to topics, publishing messages, and logging.
-# The LaserScan message is used to represent the data from the LiDAR sensor.
 from geometry_msgs.msg import Twist
 
 class ObstacleAvoidanceNode(Node):
     def __init__(self):
         super().__init__('obstacle_avoidance_node')
-        
-        # Sub to LiDAR (LaserScan)
+
+        # Subscriber to LiDAR (LaserScan) data
         self.scan_sub = self.create_subscription(
             LaserScan,
             '/scan',
@@ -30,62 +17,77 @@ class ObstacleAvoidanceNode(Node):
             10
         )
 
-        # Pub for velocity commands (Twist)
-        # This is typically used to control the robot's movement.
+        # Publisher for velocity commands (Twist)
         self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
 
-        self.get_logger().info("Obstacle avoidance node started.")
+        # Variable to store the latest LiDAR scan
+        self.latest_scan = None
+
+        # Timer callback to run at 2 Hz (twice per second)
+        self.timer = self.create_timer(0.5, self.timer_callback)
+
+        self.get_logger().info("Obstacle avoidance node started (1 Hz control).")
 
     def scan_callback(self, msg):
-        if not msg.ranges or all(r == float('inf') for r in msg.ranges):
-            self.get_logger().warn("No valid ranges received.")
+        """
+        Store the most recent LaserScan message for later processing.
+        """
+        self.latest_scan = msg
+
+    def timer_callback(self):
+        """
+        This function runs once per second. It processes the most recent
+        LiDAR data and publishes a velocity command based on obstacle distance.
+        """
+        if not self.latest_scan or not self.latest_scan.ranges:
+            self.get_logger().warn("No valid LiDAR data received.")
             return
-        
-        # total number of points in the scan
-        # msg.ranges is a list of distances at various angles
-        num_points = len(msg.ranges)
 
-        # 180 for centering the front of the robot
-        # Assuming the robot is facing forward, we take the middle index as the "front"
-        center_idx = num_points 
+        # Total number of points in the scan
+        num_points = len(self.latest_scan.ranges)
 
-        # window size for the frontal range
-        # This defines how many points to consider in front of the robot
+        # Assume the front of the robot is at the middle index
+        center_idx = num_points
+
+        # Range window size to check in front of the robot
         window_size = 10
         start_idx = max(0, center_idx - window_size)
         end_idx = min(num_points, center_idx + window_size)
 
-        # front ranges are the distances in front of the robot
-        # We take a slice of the ranges list to get the frontal distances
-        frontal_ranges = msg.ranges[start_idx:end_idx]
+        # Slice the frontal LiDAR data
+        frontal_ranges = self.latest_scan.ranges[start_idx:end_idx]
 
-        # minimum distance in the frontal ranges
-        # This gives us the closest obstacle in front of the robot
+        # Filter out invalid (inf or nan) readings
+        frontal_ranges = [r for r in frontal_ranges if not (r == float('inf') or r != r)]
+
+        if not frontal_ranges:
+            self.get_logger().warn("No usable data in frontal LiDAR range.")
+            return
+
+        # Find the minimum distance to an object in the front sector
         front_dist = min(frontal_ranges)
 
-        # threshold for obstacle avoidance
-        # If the closest obstacle is closer than this threshold, we need to react
-        dist_threshold = 0.3     # 30 cm
+        # Threshold distance to decide whether to stop or go
+        dist_threshold = 0.3  # in meters
 
         twist = Twist()
 
         if front_dist < dist_threshold:
-            # twist or break
-            # If an obstacle is detected within the threshold, we stop and turn
+            # Obstacle detected: stop and rotate
             twist.linear.x = 0.0
             twist.angular.z = 0.5
             self.get_logger().info(
-                f"Obstcle detected at {front_dist:.2f} m! Twisting..."
+                f"[2 Hz] Obstacle detected at {front_dist:.2f} m! Turning."
             )
         else:
-            # Forward motion
-            # If the path is clear, we move forward
+            # No obstacle: move forward
             twist.linear.x = 0.2
             twist.angular.z = 0.0
             self.get_logger().info(
-                f"No obstacle ahead (min: {front_dist:.2f} m). Moving forward."
+                f"[2 Hz] Clear path (min: {front_dist:.2f} m). Moving forward."
             )
 
+        # Publish the velocity command
         self.cmd_pub.publish(twist)
 
 def main(args=None):

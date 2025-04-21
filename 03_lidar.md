@@ -61,7 +61,17 @@ It analyzes the frontal range of the LiDAR readings, detects obstacles within a 
 
 [obj_detect_lidar.py](Scripts/LiDAR/obj_detect_lidar.py)
 
+https://github.com/user-attachments/assets/6586f72c-890b-40f4-ac10-3be17d219837
+
+
+
 ![Screenshot from 2025-04-13 12-34-12](https://github.com/user-attachments/assets/057add27-a50d-40a3-aca2-d6dbdd1155c0)
+
+### Implementing LiDAR-Based Obstacle Avoidance Node on Turtlesim
+
+[lidar_turtle.py](Scripts/LiDAR/lidar_turtle.py)
+
+https://github.com/user-attachments/assets/9bbca0de-e839-4993-8c65-b6a2eeb36290
 
 ---
 

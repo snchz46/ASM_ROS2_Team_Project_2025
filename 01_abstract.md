@@ -7,4 +7,6 @@ For this purpose a ROS2 environment shall be installed on a Nvidia Jetson Orin C
 Conditions:
 This project is offered to ASM students at Esslingen University. The work continues predecessor projects and has interfaces to other project teams.
 
+---
+
 🔝 [Index](README.md) | ➡️ [ROS 2 Introduction](02_ros_intro.md)

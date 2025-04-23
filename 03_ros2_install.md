@@ -4,8 +4,9 @@
 
 ## Jetson Nano with Ubuntu 20.04 OS image
 
-[Installation ](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#installation):
+[Complete Installation Guide](https://github.com/Qengineering/Jetson-Nano-Ubuntu-20-image?tab=readme-ov-file#installation)
 
+Key tasks from the guide:
 - Get a >32 GB SD card to hold the image. 
 - Download the image JetsonNanoUb20_3b.img.xz (8.7 GByte!) from Sync. 
 - Flash the image on the SD card with Imager.
@@ -18,23 +19,32 @@ More details on: https://qengineering.eu/install-ubuntu-20.04-on-jetson-nano.htm
 ## ROS2 Foxy Installation
 After the successful installation of Ubuntu, open a terminal and time the following commands:
 
-````bash
-# 0  Refresh APT & essential tools
-sudo apt update && sudo apt install curl gnupg lsb-release
+Refresh APT & essential tools
 
-# 1  Add ROS 2 GPG key and repository
+````bash
+sudo apt update && sudo apt install curl gnupg lsb-release
+````
+Add ROS 2 GPG key and repository
+
+````bash
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add –
 sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
 sudo apt update
+````
+Install desktop variant (∼1 GB)
 
-# 2  Install desktop variant (∼1 GB)
+````bash
 sudo apt install ros-foxy-desktop
+````
+Environment setup (auto‑source on every shell)
 
-# 3  Environment setup (auto‑source on every shell)
+````bash
 echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+````
+Developer tools
 
-# 4  Developer tools
+````bash
 sudo apt install python3-colcon-common-extensions python3-rosdep
 
 sudo rosdep init

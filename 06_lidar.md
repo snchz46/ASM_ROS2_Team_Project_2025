@@ -78,4 +78,4 @@ https://github.com/user-attachments/assets/9bbca0de-e839-4993-8c65-b6a2eeb36290
 
 ---
 
-⬅️ [Stereo Camera Integration](05_stereo_cam.md) | 🔝 [Index](README.md)
+⬅️ [Stereo Camera Implementation](05_stereo_cam.md) | 🔝 [Index](README.md)

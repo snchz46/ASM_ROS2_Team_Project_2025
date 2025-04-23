@@ -93,23 +93,13 @@ Add the source line to your shell RC (.zshrc / .bash_profile) for convenience.
 
 ---
 
-# ROS 2 Python Package Setup Guide (Ubuntu 22.04 + ROS 2 Humble)
+# How to create ROS2 packages
 
-This guide shows how to turn your stand‑alone Python scripts (e.g. LiDAR obstacle avoidance for **Turtlesim**) into a proper ROS 2 package inside a workspace called **`ros2_ws`**.
-
-
-## Prerequisites
-
-* Ubuntu 22.04 with **ROS 2 Humble** (or newer) installed.  
-* Basic familiarity with the terminal and Git.
-
-> **Tip** – All shell snippets below are copy‑ready: just click the copy button and paste into your terminal.
-
+This guide shows how to turn your stand‑alone Python scripts into a proper ROS 2 package inside a workspace called **`ros2_ws`**. Only valid for Ubuntu 22.04 + ROS 2 Humble and python scripts, other versions not checked.
 
 ## 1  Create / locate the workspace
 
 ```bash
-# Create workspace skeleton if it does not exist
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws
 ```

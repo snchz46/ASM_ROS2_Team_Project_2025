@@ -13,6 +13,7 @@ Welcome to this practical and compact guide about ROS 2. Click on the sections b
 - [4️⃣ Stereo Camera Integration](04_stereo_cam.md)
 - [5️⃣ Guides](05_guides.md)
 
+---
 
 ## Compatibility table
 

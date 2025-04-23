@@ -93,6 +93,5 @@ Add the source line to your shell RC (.zshrc / .bash_profile) for convenience.
 
 ---
 
-
-⬅️ [Stereo Camera Integration](04_stereo_cam.md) | 🔝 [Index](README.md)
+⬅️ [ROS 2 Installation](02_ros_intro.md) | 🔝 [Index](README.md) | ➡️ [ROS 2 Setup](04_ros2_setup.md)
 

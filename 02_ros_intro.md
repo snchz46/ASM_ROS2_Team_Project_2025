@@ -54,4 +54,4 @@ On the Linux device, several ROS 2 demos and applications are executed, includin
 
 ---
 
-⬅️ [Introduction](01_intro.md) | 🔝 [Index](README.md) | ➡️ [LiDAR Integration](03_lidar.md)
+⬅️ [Introduction](01_intro.md) | 🔝 [Index](README.md) | ➡️ [ROS 2 Installation](03_ros2_install.md)

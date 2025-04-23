@@ -93,5 +93,5 @@ Add the source line to your shell RC (.zshrc / .bash_profile) for convenience.
 
 ---
 
-⬅️ [ROS 2 Installation](02_ros_intro.md) | 🔝 [Index](README.md) | ➡️ [ROS 2 Setup](04_ros2_setup.md)
+⬅️ [ROS  Introduction](02_ros_intro.md) | 🔝 [Index](README.md) | ➡️ [ROS 2 Setup](04_ros2_setup.md)
 

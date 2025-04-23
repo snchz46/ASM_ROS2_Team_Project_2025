@@ -9,8 +9,6 @@ After following the guide above, create a new environment and execute these comm
 
 ````bash
 mkdir -p ~/ros2_ws/src
-````
-````bash
 cd ~/ros2_ws/src
 ````
 ````bash
@@ -25,7 +23,10 @@ source /opt/ros/<rosdistro>/setup.bash
 ````bash
 colcon build --symlink-install
 ````
+In another terminal run 
+
 ````bash
+cd ~/ros2_ws/
 source ./install/setup.bash
 ````
 ````bash

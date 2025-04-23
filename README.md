@@ -8,10 +8,11 @@ Welcome to this practical and compact guide about ROS 2. Click on the sections b
 ## Table of Contents
 
 - [1️⃣ Abstract](01_abstract.md)
-- [2️⃣ ROS 2 Introduction](02_ros_intro.md)
-- [3️⃣ LiDAR Integration](03_lidar.md)
-- [4️⃣ Stereo Camera Integration](04_stereo_cam.md)
-- [5️⃣ Guides](05_guides.md)
+- [2️⃣ ROS 2 Introduction](02_ros2_intro.md)
+- [3️⃣ ROS 2 Installation](03_ros2_install.md)
+- [4️⃣ ROS 2 Setup](04_ros2_setup.md)
+- [5️⃣ Stereo Camera Implementation](05_stereo_cam.md)
+- [6️⃣ LiDAR Implementation](06_lidar.md)
 
 ---
 

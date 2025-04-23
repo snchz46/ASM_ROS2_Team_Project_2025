@@ -42,6 +42,8 @@ After these steps a RViz2 window will appear. Make sure that the topic is set to
 
 ![RViz2](https://github.com/user-attachments/assets/6adccf89-6fe4-4c80-ada2-616be50cbd76)
 
+---
+
 # Retrieving sensor data from the LiDAR
 
 ## Script code to read data from the LiDAR

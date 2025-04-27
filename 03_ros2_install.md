@@ -8,7 +8,7 @@
 
 Key tasks from the guide:
 - Get a >32 GB SD card to hold the image. 
-- Download the image JetsonNanoUb20_3b.img.xz (8.7 GByte!) from Sync. 
+- Download the image JetsonNanoUb20_3b.img.xz (8.7 GByte!) from [Source](https://ln5.sync.com/dl/403a73c60/bqppm39m-mh4qippt-u5mhyyfi-nnma8c4t/view/default/14418794280004). 
 - Flash the image on the SD card with Imager.
 - Flash the xz directly, not an unzipped img image. 
 - Insert the SD card in your Jetson Nano. 

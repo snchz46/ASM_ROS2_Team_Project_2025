@@ -22,19 +22,21 @@ After the successful installation of Ubuntu, open a terminal and time the follow
 Refresh APT & essential tools
 
 ````bash
-sudo apt update && sudo apt install curl gnupg lsb-release
+sudo apt update && sudo apt install curl -y
 ````
 Add ROS 2 GPG key and repository
 
 ````bash
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add –
-sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'
+sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
 ````
 Install desktop variant (∼1 GB)
 
 ````bash
-sudo apt install ros-foxy-desktop
+sudo apt install ros-foxy-desktop python3-argcomplete
+
+sudo apt install ros-dev-tools
 ````
 Environment setup (auto‑source on every shell)
 

@@ -73,6 +73,12 @@ https://github.com/user-attachments/assets/6586f72c-890b-40f4-ac10-3be17d219837
 
 ### Implementing LiDAR-Based Obstacle Avoidance Node on Turtlesim
 
+ROS 2 Turtlebot Sim must be running previously on another terminal tab
+````bash
+ros2 run turtlesim turtlesim_node
+````
+The Turtlebot controller script publishes Twisting values on the topic /turtle1/cmd_vel based on LiDAR LaserScan data
+
 [Turtlebot LaserScan Controller ](Scripts/LiDAR/lidar_turtle_sub.py)
 
 https://github.com/user-attachments/assets/9bbca0de-e839-4993-8c65-b6a2eeb36290

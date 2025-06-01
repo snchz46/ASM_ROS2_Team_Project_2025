@@ -11,6 +11,9 @@ The theoretical foundation underlying this project is part of a broader research
 
 [Link to paper published in OPUS]()
 
+[Project_paper.pdf](https://github.com/user-attachments/files/20541210/Project_paper.pdf)
+
+
 ---
 
 ## Table of Contents
@@ -26,9 +29,9 @@ Click on the sections below to navigate through each topic.
 
 ---
 
-## Proposed Physical Architecture
+## Project Poster
 
-![system arch HW](https://github.com/user-attachments/assets/544bdf86-3109-43ce-901f-af3fa621d5c6)
+![Autonomous Driving with ROS 2](https://github.com/user-attachments/assets/b73ee6c0-7d5c-4429-b613-5cc21ab9a0dd)
 
 ---
 

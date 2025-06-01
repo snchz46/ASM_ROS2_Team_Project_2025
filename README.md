@@ -11,7 +11,7 @@ The theoretical foundation underlying this project is part of a broader research
 
 [Link to paper published in OPUS]()
 
-[Project_paper.pdf](https://github.com/user-attachments/files/20541210/Project_paper.pdf)
+[Project_paper.pdf](Documents/Project_paper.pdf)
 
 
 ---

@@ -11,6 +11,20 @@ Autonomous driving technologies essentially rely on the integration of various s
 
 The ADMIT14 program, Automated Driving in MIniaturized Traffic environments scale 1:14, was started at Hochschule Esslingen with the vision of validating and testing autonomous functionality in a manageable miniature environment. Our work within this paradigm revolves around the realization of a sensor fusion architecture with ROS2, by means of LiDAR technology and stereo cameras on an NVIDIA Jetson platform.
 
+# Proposed System Architecture
+
+Image shows the modular framework employed in this project. The system architecture is divided into two areas. On the left side, in the blue area, the Jetson ROS2 setup takes care of the management of data from the RPLIDAR and Stereo Camera. The RPLIDAR and Stereo Camera are each interfaced with specific Python-based ROS2 nodes that publish sensor data on the following topics: \texttt{/scan}, \texttt{/raw\_image\_left}, and \texttt{/raw\_image\_right}. 
+
+Then, the Jetson executes a series of ROS2 nodes that receive the sensor data published by the sensor nodes and then publish appropriate control commands through a CAN interface. The interface serves to connect the ROS2 system to an external Arduino microcontroller. 
+
+In the right side of the architecture, red area, the Arduino processes incoming CAN messages and transmits commands to the respective actuators. This divided arrangement enables each hardware unit to be developed, tested, and replaced independently, thereby illustrating the flexibility fostered by ROS2 in modular architectures.
+
+![system arch](https://github.com/user-attachments/assets/f654b3a4-083b-4bbb-9059-a9da8de3f44a)
+
+Targeted real Hardware
+
+![system arch HW](https://github.com/user-attachments/assets/e554f943-8961-4db0-ae38-01e919abe2c2)
+
 
 ---
 

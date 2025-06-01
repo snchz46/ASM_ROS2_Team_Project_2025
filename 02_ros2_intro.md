@@ -1,10 +1,12 @@
 # ROS 2 Introduction
 
-ROS 2 (Robot Operating System 2) is a flexible and modular open-source framework for developing robotic applications. It provides the tools, libraries, and conventions needed to build distributed systems where multiple components—called nodes—can communicate over well-defined interfaces.
+ROS2 is an open-source middleware framework that is tailored for the creation of distributed and modular robot applications. ROS2 extends the basic ROS environment with the inclusion of real-time communication, multi-platform runtimes, and enhanced security features. In the context of this project, ROS2 serves as the centerpiece of the communication system among the sensors (stereo camera and LiDAR), the processing module (Jetson Nano), and external modules (Arduino, MATLAB) with standardized topics and interfaces.
 
-Built to address the limitations of the original ROS, ROS 2 offers real-time capabilities, enhanced security, improved middleware abstraction, and native support for multi-platform systems (Linux, Windows, macOS). It is widely used in research, industrial automation, and autonomous systems.
+The publish-subscribe architecture allows for a loose coupling between data producers and consumers, thereby enabling easy integration and subsequent substitution of components with minimal impacts on the overall system.
 
-This guide aims to introduce ROS 2 concepts and provide practical steps for installation, configuration, and development with real examples using sensors like LiDAR and integrations with MATLAB.
+One of the primary motivations for using ROS2 is because of its modularity, which promotes breaking up functionalities into independent nodes. Modularity renders both the development process and the adaptation of the system afterward straightforward. For instance, swapping a LiDAR sensor, updating the stereo camera, or changing the communication interfaces (i.e., from CAN to Ethernet) does not necessitate a redesign of the overall system. Rather, only the respective ROS2 node must be recompiled or adjusted.
+
+Additionally, ROS2 has real-time communication, platform independence, and seamless interfacing with Simulink and MATLAB tools built in. All these make it an ideal middleware candidate for the development and deployment of autonomous capabilities in academic and industrial environments. The remainder of this paper is organized as follows: Section 2 covers the development challenges faced. Section 3 presents the system architecture. Section 4 reports the implementation details. Section 5 gives the experimental results, and Section 6 concludes the paper with future research directions.
 
 ## ROS 2: Nodes and Topics
 In ROS 2, a node is a basic building block responsible for a specific, modular function within a robotic system. For example, one node might control wheel motors, while another might publish sensor data from a LiDAR. A complete robotic system is typically made up of many nodes working together, each performing a distinct role.

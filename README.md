@@ -1,9 +1,11 @@
 
-# 🤖 ASM ROS2 TEAM PROJECT 2025
-> A guide by Samuel Sanchez
-##  ROS 2 Guide
+# 🤖 Automotive Systems Master Project 2025: ADMIT14 ROS 2 
+> A guide by Samuel Sanchez, Master student at Hochschule Esslingen
+##  Repository guide
 
-Welcome to this practical and compact guide about ROS 2. Click on the sections below to navigate through each topic.
+Welcome to this practical and compact guide about ROS 2 and how to implement and integrate an RPLiDAR and a Stereo Camera on a NVIDIA Jetson Nano. 
+
+Click on the sections below to navigate through each topic.
 
 ## Table of Contents
 
@@ -16,7 +18,7 @@ Welcome to this practical and compact guide about ROS 2. Click on the sections b
 
 ---
 
-## Compatibility table
+## ROS 2 Compatibility table
 
 | ROS 2 Distribution     | Compatible Ubuntu Version          | Official ROS 2 Support | End of Support | Jetson Kits        | MATLAB         |
 |------------------------|------------------------------------|------------------------|----------------|--------------------|----------------|

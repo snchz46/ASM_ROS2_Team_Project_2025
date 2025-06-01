@@ -13,6 +13,8 @@ The ADMIT14 program, Automated Driving in MIniaturized Traffic environments scal
 
 # Proposed System Architecture
 
+## Logical Architecture
+
 Image shows the modular framework employed in this project. The system architecture is divided into two areas. On the left side, in the blue area, the Jetson ROS2 setup takes care of the management of data from the RPLIDAR and Stereo Camera. The RPLIDAR and Stereo Camera are each interfaced with specific Python-based ROS2 nodes that publish sensor data on the following topics: \texttt{/scan}, \texttt{/raw\_image\_left}, and \texttt{/raw\_image\_right}. 
 
 Then, the Jetson executes a series of ROS2 nodes that receive the sensor data published by the sensor nodes and then publish appropriate control commands through a CAN interface. The interface serves to connect the ROS2 system to an external Arduino microcontroller. 

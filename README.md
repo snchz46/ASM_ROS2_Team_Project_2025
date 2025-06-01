@@ -1,6 +1,6 @@
 
 # 🤖 Automotive Systems Master Project 2025: ADMIT14 ROS 2 
-> A guide by Samuel Sanchez, Master student at Hochschule Esslingen
+> A project work by Samuel Sanchez, Master student at Hochschule Esslingen
 ##  Repository guide
 
 Welcome to this practical and compact guide about ROS 2 and how to implement and integrate an RPLiDAR and a Stereo Camera on a NVIDIA Jetson Nano. 

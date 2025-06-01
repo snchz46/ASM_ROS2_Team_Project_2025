@@ -4,10 +4,16 @@
 ##  Repository guide
 
 Welcome to this practical and compact guide about ROS 2 and how to implement and integrate an RPLiDAR and a Stereo Camera on a NVIDIA Jetson Nano. 
+Link to paper published in OPUS
 
-Click on the sections below to navigate through each topic.
+Conditions:
+This project is offered to ASM students at Esslingen University. The work continues predecessor projects and has interfaces to other project teams. 
+
+---
 
 ## Table of Contents
+
+Click on the sections below to navigate through each topic.
 
 - [1️⃣ Project Introduction](01_intro.md)
 - [2️⃣ ROS 2 Introduction](02_ros2_intro.md)

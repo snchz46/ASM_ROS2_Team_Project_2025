@@ -29,9 +29,11 @@ In another terminal run
 cd ~/ros2_ws/
 source ./install/setup.bash
 ````
+Very important command to be able to provide the LiDAR enough power to spin
 ````bash
 sudo chmod 777 /dev/ttyUSB0
 ````
+Package launch command provided by the manufacturer, for our case we need the a2m8 version
 ````bash
 ros2 launch rplidar_ros view_rplidar_a2m8_launch.py
 ````

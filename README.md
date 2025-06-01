@@ -9,7 +9,7 @@ Click on the sections below to navigate through each topic.
 
 ## Table of Contents
 
-- [1️⃣ Project Introduction](01_intro.mdd)
+- [1️⃣ Project Introduction](01_intro.md)
 - [2️⃣ ROS 2 Introduction](02_ros2_intro.md)
 - [3️⃣ ROS 2 Installation](03_ros2_install.md)
 - [4️⃣ ROS 2 Setup](04_ros2_setup.md)

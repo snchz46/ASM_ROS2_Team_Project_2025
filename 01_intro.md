@@ -23,4 +23,4 @@ In the right side of the architecture, red area, the Arduino processes incoming 
 
 ---
 
-🔝 [Index](README.md) | ➡️ [ROS 2 Introduction](02_ros_intro.md)
+🔝 [Index](README.md) | ➡️ [ROS 2 Introduction](02_ros2_intro.md)

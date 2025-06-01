@@ -21,11 +21,6 @@ In the right side of the architecture, red area, the Arduino processes incoming 
 
 ![system arch](https://github.com/user-attachments/assets/f654b3a4-083b-4bbb-9059-a9da8de3f44a)
 
-Targeted real Hardware
-
-![system arch HW](https://github.com/user-attachments/assets/e554f943-8961-4db0-ae38-01e919abe2c2)
-
-
 ---
 
 🔝 [Index](README.md) | ➡️ [ROS 2 Introduction](02_ros_intro.md)

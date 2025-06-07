@@ -3,8 +3,8 @@
 stereo_viewer_detect.py
 
 Subscribes to:
-    /stereo/left/image_raw
-    /stereo/right/image_raw
+    /left/image_raw
+    /right/image_raw
 
 • Shows the two streams side-by-side.  
 • Runs YOLOv8-nano on the LEFT frame.  

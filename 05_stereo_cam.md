@@ -9,7 +9,7 @@ Documents, packages and tools: [https://www.waveshare.com/wiki/IMX219-83_Stereo_
 
 Two different scripts were developed, one for rapid debugging, using a regular USB webcam connected to a Windows environment and another for the targeted HW, the Waveshare IMX219 Stereo_Camera, connected on the Jetson Nano.
 
-- [Stereo Camera Publisher](Scripts/Camera/jetson_stereo_cam_pub.py)
+- [Stereo Camera Publisher](Scripts/Camera/jetson_camera_pub.py)
 
 - [Windows Camera Publisher](Scripts/Camera/windows_cam_pub.py)
 

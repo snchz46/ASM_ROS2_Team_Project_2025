@@ -13,6 +13,8 @@ The theoretical foundation underlying this project is part of a broader research
 
 [Project_paper.pdf](Documents/Project_paper_Samuel.pdf)
 
+![IMG-20250607-WA0011](https://github.com/user-attachments/assets/ae0fa558-29f0-4b37-b254-f30aa95473bc)
+
 
 ---
 
@@ -31,7 +33,8 @@ Click on the sections below to navigate through each topic.
 
 ## Project Poster
 
-![Autonomous Driving with ROS 2](https://github.com/user-attachments/assets/b73ee6c0-7d5c-4429-b613-5cc21ab9a0dd)
+![Autonomous Driving with ROS 2](https://github.com/user-attachments/assets/69342e43-b71f-4749-8f64-e514c5650966)
+
 
 ---
 

@@ -25,6 +25,10 @@ Screenshot for [Windows Camera Subscriber w/ YOLO V8](Scripts/Camera/windows_yol
 
 ![python_image_subscriber](https://github.com/user-attachments/assets/4dfd5280-882e-4df7-80f2-9268f2333d37)
 
+Screenshot for [Stereo Camera Subscriber w/ YOLO V8](Scripts/Camera/jetson_yolov8_cam_sub.py)
+
+![stereo vision road](https://github.com/user-attachments/assets/e52e29af-9740-403e-b7dc-4c0479f0fb4e)
+
 ## Retrieving image data from the Camera via MATLAB
 
 Screenshot for [MATLAB Stereo Camera Subscriber](Scripts/Camera/matlab_cam_sub.m)

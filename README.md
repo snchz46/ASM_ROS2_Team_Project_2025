@@ -33,7 +33,7 @@ Click on the sections below to navigate through each topic.
 
 ## Project Poster
 
-![Autonomous Driving with ROS 2](https://github.com/user-attachments/assets/69342e43-b71f-4749-8f64-e514c5650966)
+![Autonomous Driving with ROS 2](https://github.com/user-attachments/assets/965fa0c2-a82d-4601-8a5a-f4f2c7ad7d16)
 
 
 ---

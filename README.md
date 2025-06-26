@@ -11,7 +11,7 @@ The theoretical foundation underlying this project is part of a broader research
 
 [Link to paper published in OPUS](TBD) WIP
 
-[Project_paper.pdf](Documents/Project_paper_Samuel.pdf) WIP
+[Project_paper.pdf](Documents/Project_paper_samuel.pdf) WIP
 
 ![IMG-20250607-WA0011](https://github.com/user-attachments/assets/ae0fa558-29f0-4b37-b254-f30aa95473bc)
 
